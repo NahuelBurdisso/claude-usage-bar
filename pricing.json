@@ -1,0 +1,81 @@
+{
+  "_comment": "USD per 1M tokens. cache_write_5m = 1.25x input, cache_write_1h = 2x input, cache_read = 0.1x input unless the model publishes its own rate.",
+  "models": {
+    "claude-opus-5": {
+      "in": 5.0,
+      "out": 25.0,
+      "cw5": 6.25,
+      "cw1h": 10.0,
+      "cr": 0.5
+    },
+    "claude-opus-4-8": {
+      "in": 5.0,
+      "out": 25.0,
+      "cw5": 6.25,
+      "cw1h": 10.0,
+      "cr": 0.5
+    },
+    "claude-opus-4-7": {
+      "in": 5.0,
+      "out": 25.0,
+      "cw5": 6.25,
+      "cw1h": 10.0,
+      "cr": 0.5
+    },
+    "claude-opus-4-6": {
+      "in": 5.0,
+      "out": 25.0,
+      "cw5": 6.25,
+      "cw1h": 10.0,
+      "cr": 0.5
+    },
+    "claude-fable-5-1": {
+      "in": 10.0,
+      "out": 50.0,
+      "cw5": 12.5,
+      "cw1h": 20.0,
+      "cr": 0.25
+    },
+    "claude-fable-5": {
+      "in": 10.0,
+      "out": 50.0,
+      "cw5": 12.5,
+      "cw1h": 20.0,
+      "cr": 1.0
+    },
+    "claude-sonnet-5": {
+      "in": 2.0,
+      "out": 10.0,
+      "cw5": 2.5,
+      "cw1h": 4.0,
+      "cr": 0.2
+    },
+    "claude-sonnet-4-6": {
+      "in": 3.0,
+      "out": 15.0,
+      "cw5": 3.75,
+      "cw1h": 6.0,
+      "cr": 0.3
+    },
+    "claude-haiku-4-5": {
+      "in": 1.0,
+      "out": 5.0,
+      "cw5": 1.25,
+      "cw1h": 2.0,
+      "cr": 0.1
+    }
+  },
+  "aliases": {
+    "opus": "claude-opus-5",
+    "sonnet": "claude-sonnet-5",
+    "haiku": "claude-haiku-4-5",
+    "fable": "claude-fable-5-1"
+  },
+  "free": [
+    "<synthetic>"
+  ],
+  "_comment_plan": "Suscripcion mensual fija. NO se factura por token: solo sirve para mostrar cuanto rinde el plan frente al precio de lista de la API.",
+  "plan": {
+    "usd_per_month": 100
+  }
+}
